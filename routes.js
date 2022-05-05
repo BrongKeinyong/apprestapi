@@ -8,4 +8,7 @@ module.exports = function(app) {
 
     app.route('/allcustomer')    
         .get(jsonku.showdata);
+
+    app.route('/allcustomer/:id')    
+        .get(jsonku.showdatawithid);    
 };
